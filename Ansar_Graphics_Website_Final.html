@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ansar Graphics - Graphic Designer. Creative logos, posters, banners, business cards and social media designs.">
+  <title>Ansar Graphics | Graphic Designer</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#07111f;color:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(7,17,31,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .brand img{width:46px;height:46px;object-fit:contain;border-radius:10px}
+    .brand span{font-size:18px}
+    .links{display:flex;gap:22px;font-size:14px;color:#d8e2ef}
+    .links a:hover{color:#f7c84b}
+    .hero{min-height:86vh;display:grid;place-items:center;text-align:center;padding:70px 0;background:
+      radial-gradient(circle at 50% 15%,rgba(247,200,75,.18),transparent 35%),
+      linear-gradient(145deg,#07111f,#101e34)}
+    .hero-logo{width:min(210px,55vw);height:auto;object-fit:contain;margin-bottom:20px;filter:drop-shadow(0 18px 35px rgba(0,0,0,.35))}
+    .eyebrow{color:#f7c84b;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+    h1{font-size:clamp(38px,7vw,72px);line-height:1.05;margin:10px 0}
+    h1 span{color:#f7c84b}
+    .hero p{max-width:700px;margin:18px auto;color:#c8d4e3;font-size:18px}
+    .buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}
+    .btn{padding:13px 20px;border-radius:999px;font-weight:700;border:1px solid rgba(255,255,255,.15)}
+    .primary{background:#f7c84b;color:#07111f}
+    .secondary{background:#142238;color:#fff}
+    section{padding:80px 0}
+    .section-title{text-align:center;margin-bottom:40px}
+    .section-title h2{font-size:34px}
+    .section-title p{color:#9fb0c4;margin-top:7px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+    .card{background:#0e1b2e;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:28px}
+    .card h3{margin-bottom:12px;color:#f7c84b}
+    .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .skill{padding:15px;border-radius:14px;background:#142238;border:1px solid rgba(255,255,255,.06);font-weight:700}
+    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .work{background:#0e1b2e;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+    .work img{width:100%;height:260px;object-fit:cover;display:block}
+    .work div{padding:16px}.work h3{font-size:18px}.work p{color:#9fb0c4;font-size:14px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .contact-item{padding:22px;border-radius:18px;background:#0e1b2e;border:1px solid rgba(255,255,255,.08)}
+    .contact-item small{color:#9fb0c4;display:block;margin-bottom:4px}
+    .contact-item a{font-size:20px;font-weight:800}
+    footer{text-align:center;padding:30px;color:#8fa0b5;border-top:1px solid rgba(255,255,255,.08)}
+    @media(max-width:800px){
+      .links{display:none}.about,.contact{grid-template-columns:1fr}.portfolio{grid-template-columns:1fr}
+      .work img{height:auto;max-height:480px;object-fit:contain;background:#09111d}
+    }
+  
+.owner-card{text-align:center}
+.owner-card button{cursor:pointer;margin-right:8px}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgMjIwIj4KPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSIyMjAiIHJ4PSIzNiIgZmlsbD0iIzA3MTExZiIvPgo8dGV4dCB4PSI0MCIgeT0iMTA1IiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4MiIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0iI2Y3Yzg0YiI+QU5TQVI8L3RleHQ+Cjx0ZXh0IHg9IjQwIiB5PSIxNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjU0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIj5HUkFQSElDUzwvdGV4dD4KPHBhdGggZD0iTTYxMCA0OCBMNzQ1IDQ4IEw3MDAgODggTDY0MCA4OCBaIiBmaWxsPSIjZjdjODRiIi8+Cjwvc3ZnPg==" alt="Ansar Graphics logo"><span>Ansar Graphics</span></a>
+      <div class="links">
+        <a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container">
+    <img class="hero-logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgMjIwIj4KPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSIyMjAiIHJ4PSIzNiIgZmlsbD0iIzA3MTExZiIvPgo8dGV4dCB4PSI0MCIgeT0iMTA1IiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4MiIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0iI2Y3Yzg0YiI+QU5TQVI8L3RleHQ+Cjx0ZXh0IHg9IjQwIiB5PSIxNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjU0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIj5HUkFQSElDUzwvdGV4dD4KPHBhdGggZD0iTTYxMCA0OCBMNzQ1IDQ4IEw3MDAgODggTDY0MCA4OCBaIiBmaWxsPSIjZjdjODRiIi8+Cjwvc3ZnPg==" alt="Ansar Graphics logo">
+    <div class="eyebrow">Creative • Modern • Professional</div>
+    <h1>Ansar Graphics<br><span>Graphic Designer</span></h1>
+    <p>I create clean, modern and attractive designs for businesses, brands and individuals — from logos and posters to social media graphics.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#portfolio">View My Work</a>
+      <a class="btn secondary" href="tel:+923153946319">Call Me</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-title"><h2>About Me</h2><p>Creative design with a focus on quality and clarity.</p></div>
+    <div class="about">
+      <div class="card">
+        <h3>Who I Am</h3>
+        <p>I’m Ansar Graphics, a passionate and creative Graphic Designer. I create clean, modern, and attractive designs that help businesses and individuals build a strong visual identity. I specialize in logos, posters, banners, business cards, and social media designs. My goal is to turn ideas into creative designs that make an impact.</p>
+      </div>
+      <div class="card" id="services">
+        <h3>My Services</h3>
+        <div class="skills">
+          <div class="skill">Logo Design</div>
+          <div class="skill">Poster Design</div>
+          <div class="skill">Banner Design</div>
+          <div class="skill">Business Cards</div>
+          <div class="skill">Social Media Posts</div>
+          <div class="skill">Branding Designs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="container">
+    <div class="section-title"><h2>My Portfolio</h2><p>Selected designs and client work.</p></div>
+    <div class="portfolio">
+      <article class="work"><img src="portfolio-mobile-1.jpg" alt="Mobile shop poster design"><div><h3>Mobile Shop Poster</h3><p>Promotional poster design.</p></div></article>
+      <article class="work"><img src="portfolio-mobile-2.jpg" alt="Mobile shop banner design"><div><h3>Mobile Shop Banner</h3><p>Modern business banner design.</p></div></article>
+      <article class="work"><img src="portfolio-cafe.jpg" alt="BOHIO CAFE investment design"><div><h3>BOHIO'CAFE + DAIRY</h3><p>Business promotional design.</p></div></article>
+    </div>
+  </div>
+</section>
+
+
+<section id="owner-panel">
+  <div class="container">
+    <div class="section-title">
+      <h2>Owner Portfolio Upload</h2>
+      <p>Only you can open this section and add new designs to this browser.</p>
+    </div>
+    <div class="card owner-card">
+      <button class="btn primary" id="ownerLogin">Owner Login</button>
+      <div id="ownerTools" style="display:none;margin-top:18px">
+        <input id="designFile" type="file" accept="image/*" multiple
+          style="width:100%;padding:14px;border-radius:12px;background:#142238;color:#fff;border:1px solid rgba(255,255,255,.12)">
+        <button class="btn primary" id="addDesigns" style="margin-top:12px">Add Designs</button>
+        <button class="btn secondary" id="clearLocal" style="margin-top:12px">Remove My Added Designs</button>
+        <p style="color:#9fb0c4;margin-top:10px;font-size:13px">
+          Added designs are saved locally in this browser. For permanent sharing across devices,
+          a real database/login backend will be needed.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-title"><h2>Let's Work Together</h2><p>Have a design project? Get in touch.</p></div>
+    <div class="contact">
+      <div class="contact-item"><small>Phone / WhatsApp</small><a href="https://wa.me/923153946319" target="_blank">0315-3946319</a></div>
+      <div class="contact-item"><small>Phone / WhatsApp</small><a href="https://wa.me/923293190137" target="_blank">0329-3190137</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Ansar Graphics — Graphic Designer. All rights reserved.</footer>
+
+<script>
+(() => {
+  const PASSWORD = "AnsarGraphics2026";
+  const loginBtn = document.getElementById("ownerLogin");
+  const tools = document.getElementById("ownerTools");
+  const fileInput = document.getElementById("designFile");
+  const addBtn = document.getElementById("addDesigns");
+  const clearBtn = document.getElementById("clearLocal");
+  const portfolio = document.querySelector(".portfolio");
+
+  function loadLocal() {
+    const items = JSON.parse(localStorage.getItem("ansarGraphicsPortfolio") || "[]");
+    for (const item of items) addCard(item);
+  }
+  function addCard(item) {
+    const article = document.createElement("article");
+    article.className = "work";
+    article.innerHTML = `<img src="${item.data}" alt="${item.name}">
+      <div><h3>${item.name}</h3><p>Added to my portfolio.</p></div>`;
+    portfolio.appendChild(article);
+  }
+
+  loginBtn.addEventListener("click", () => {
+    const pass = prompt("Owner password:");
+    if (pass === PASSWORD) {
+      tools.style.display = "block";
+      loginBtn.textContent = "Owner Mode On";
+      loginBtn.disabled = true;
+    } else if (pass !== null) {
+      alert("Wrong password.");
+    }
+  });
+
+  addBtn.addEventListener("click", async () => {
+    if (!fileInput.files.length) return alert("Select your design file(s) first.");
+    const existing = JSON.parse(localStorage.getItem("ansarGraphicsPortfolio") || "[]");
+    for (const file of fileInput.files) {
+      const data = await new Promise((resolve) => {
+        const r = new FileReader();
+        r.onload = () => resolve(r.result);
+        r.readAsDataURL(file);
+      });
+      const item = {name: file.name.replace(/\.[^.]+$/, ""), data};
+      existing.push(item);
+      addCard(item);
+    }
+    localStorage.setItem("ansarGraphicsPortfolio", JSON.stringify(existing));
+    fileInput.value = "";
+    alert("Design added to your portfolio on this browser.");
+  });
+
+  clearBtn.addEventListener("click", () => {
+    if (confirm("Remove all designs you added on this browser?")) {
+      localStorage.removeItem("ansarGraphicsPortfolio");
+      location.reload();
+    }
+  });
+
+  loadLocal();
+})();
+</script>
+
+</body>
+</html>
